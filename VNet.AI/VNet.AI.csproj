@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Behavior\Entities\" />
+    <Folder Include="Dialogue\" />
+    <Folder Include="Learning\Neural\" />
+    <Folder Include="Learning\NonNeural\" />
+    <Folder Include="Path\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\VNet.DataStructures\VNet.DataStructures\VNet.DataStructures.csproj" />
+    <ProjectReference Include="..\..\VNet.System\VNet.System\VNet.System.csproj" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy /e /y &quot;$(TargetPath)&quot; &quot;D:\VNet bin\&quot;" />
+  </Target>
+
+</Project>
