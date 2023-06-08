@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VNet.AI", "VNet.AI\VNet.AI.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VNet.AI.Tests", "VNet.AI.Tests\VNet.AI.Tests.csproj", "{4C86B003-C7F6-47E7-9C5C-9DDC979BF071}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VNet.AI.Terminal", "VNet.AI.Console\VNet.AI.Terminal.csproj", "{7CF4F00A-22CB-425D-9A92-8E6F2D6EBFC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VNet.DataStructures", "..\VNet.DataStructures\VNet.DataStructures\VNet.DataStructures.csproj", "{121CADBA-05C9-4A9B-BBC0-A2DCC97590A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,16 +23,16 @@ Global
 		{4C86B003-C7F6-47E7-9C5C-9DDC979BF071}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C86B003-C7F6-47E7-9C5C-9DDC979BF071}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C86B003-C7F6-47E7-9C5C-9DDC979BF071}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7CF4F00A-22CB-425D-9A92-8E6F2D6EBFC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7CF4F00A-22CB-425D-9A92-8E6F2D6EBFC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7CF4F00A-22CB-425D-9A92-8E6F2D6EBFC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7CF4F00A-22CB-425D-9A92-8E6F2D6EBFC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{121CADBA-05C9-4A9B-BBC0-A2DCC97590A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{121CADBA-05C9-4A9B-BBC0-A2DCC97590A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{121CADBA-05C9-4A9B-BBC0-A2DCC97590A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{121CADBA-05C9-4A9B-BBC0-A2DCC97590A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {694EBE62-8472-45AC-B820-B140D1624DF4}
 		VisualSVNWorkingCopyRoot = .
+		SolutionGuid = {694EBE62-8472-45AC-B820-B140D1624DF4}
 	EndGlobalSection
 EndGlobal

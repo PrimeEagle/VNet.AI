@@ -1,7 +1,9 @@
 ﻿using System.Numerics;
 using VNet.System;
 using VNet.AI.Behavior;
-
+using VNet.DataStructures.Map;
+using VNet.AI.Behavior.Triggers;
+using VNet.AI.Behavior.Stimuli;
 
 namespace VNet.AI.Terminal
 {
