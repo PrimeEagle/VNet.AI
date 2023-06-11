@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace VNet.AI.Behavior
+﻿namespace VNet.AI.Behavior
 {
     internal class Contagion
     {
