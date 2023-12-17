@@ -7,15 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Behavior\Entities\" />
-    <Folder Include="Dialogue\" />
-    <Folder Include="Learning\Neural\" />
-    <Folder Include="Learning\NonNeural\" />
+    <Compile Remove="Dialogue\**" />
+    <Compile Remove="Learning\**" />
+    <EmbeddedResource Remove="Dialogue\**" />
+    <EmbeddedResource Remove="Learning\**" />
+    <None Remove="Dialogue\**" />
+    <None Remove="Learning\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\VNet.DataStructures\VNet.DataStructures\VNet.DataStructures.csproj" />
-    <ProjectReference Include="..\..\VNet.Mathematics\VNet.Mathematics\VNet.Mathematics.csproj" />
+    <Folder Include="Behavior\Entities\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="VNet.DataStructures" Version="1.0.0" />
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
