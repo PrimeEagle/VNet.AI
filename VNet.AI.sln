@@ -12,6 +12,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".version", ".version", "{93
 		.version\version.json = .version\version.json
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B6F86445-AAAD-481F-A6DE-242F2B66012C}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,7 +36,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {694EBE62-8472-45AC-B820-B140D1624DF4}
 		VisualSVNWorkingCopyRoot = .
+		SolutionGuid = {694EBE62-8472-45AC-B820-B140D1624DF4}
 	EndGlobalSection
 EndGlobal
