@@ -1,42 +1,37 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-	<PropertyGroup>
-		<TargetFramework>net8.0</TargetFramework>
-		<ImplicitUsings>enable</ImplicitUsings>
-		<Nullable>enable</Nullable>
-	</PropertyGroup>
-
-	<PropertyGroup>
-		<PackageId>VNet.AI</PackageId>
-		<Authors>PrimeEagle</Authors>
-		<Product>VNet.AI</Product>
-		<Description>A class library for AI algorithms and utilities.</Description>
-		<PackageTags>dotnet;dotnet-core;dotnet-library;ai;artificial-intelligence</PackageTags>
-		<PackageReleaseNotes>Add NuGet metadata.</PackageReleaseNotes>
-		<PackageIcon>icon.png</PackageIcon>
-		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-		<PackageProjectUrl>https://github.com/PrimeEagle/VNet.AI</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/PrimeEagle/VNet.AI</RepositoryUrl>
-		<RepositoryType>git</RepositoryType>
-		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-		<TargetFramework>net8.0</TargetFramework>
-		<AssemblyName>VNet.AI</AssemblyName>
-	</PropertyGroup>
-
-	<ItemGroup>
-		<None Include="icon.png" Pack="true" PackagePath="" />
-	</ItemGroup>
-	<PropertyGroup Condition="'$(ServerBuild)' != ''">
-	</PropertyGroup>
-
-	<ItemGroup Condition="'$(ServerBuild)' != ''">
-		<PackageReference Include="VNet.DataStructures" Version="1.0.0" />
-	</ItemGroup>
-
-	<ItemGroup Condition="'$(ServerBuild)' == ''">
-		<ProjectReference Include="..\..\VNet.DataStructures\VNet.DataStructures\VNet.DataStructures.csproj" />
-	</ItemGroup>
-
-	<Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(ServerBuild)' == ''">
-		<Exec Command="xcopy /e /y &quot;$(TargetPath)&quot; &quot;D:\VNet bin\&quot;" />
-	</Target>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PackageId>VNet.AI</PackageId>
+    <Authors>PrimeEagle</Authors>
+    <Product>VNet.AI</Product>
+    <Description>A class library for AI algorithms and utilities.</Description>
+    <PackageTags>dotnet;dotnet-core;dotnet-library;ai;artificial-intelligence</PackageTags>
+    <PackageReleaseNotes>Add NuGet metadata.</PackageReleaseNotes>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/PrimeEagle/VNet.AI</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/PrimeEagle/VNet.AI</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>VNet.AI</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="icon.png" Pack="true" PackagePath="" />
+  </ItemGroup>
+  <PropertyGroup Condition="'$(ServerBuild)' != ''">
+  </PropertyGroup>
+  <ItemGroup Condition="'$(ServerBuild)' != ''">
+    <PackageReference Include="VNet.DataStructures" Version="1.0.0" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(ServerBuild)' == ''">
+    <ProjectReference Include="..\..\VNet.DataStructures\VNet.DataStructures\VNet.DataStructures.csproj" />
+  </ItemGroup>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(ServerBuild)' == ''">
+    <Exec Command="xcopy /e /y &quot;$(TargetPath)&quot; &quot;D:\VNet bin\&quot;" />
+  </Target>
 </Project>
