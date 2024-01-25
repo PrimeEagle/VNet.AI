@@ -25,10 +25,10 @@
   </ItemGroup>
   <PropertyGroup Condition="'$(ServerBuild)' != ''">
   </PropertyGroup>
-  <ItemGroup Condition="'$(ServerBuild)' != ''">
+  <ItemGroup Condition="'$(ServerBuild)' == 'true' ">
     <PackageReference Include="VNet.DataStructures" Version="1.0.1" />
   </ItemGroup>
-  <ItemGroup Condition="'$(ServerBuild)' == ''">
+  <ItemGroup Condition="'$(ServerBuild)' == 'false'  Or '$(ServerBuild)' == '' ">
     <ProjectReference Include="..\..\VNet.DataStructures\VNet.DataStructures\VNet.DataStructures.csproj" />
   </ItemGroup>
   <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(ServerBuild)' == ''">
